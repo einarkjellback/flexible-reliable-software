@@ -1,0 +1,43 @@
+To do:
+Implement GammaTownFactory
+Test and implement AlternatingRateStrategy
+
+Done:
+Implement BetaTownFactory
+Implement AlphaTownFactory
+Implement and test receipt with bar code.
+Use StandardReceipt in the PayStationImpl.
+Implement and test StandardReceipt.print(PrintStream).
+Make LinearRateStrategy accept an hourly rate in its constructor.
+Add functional tests for:
+    USA linear rate ---
+    USA progressive rate ---
+    Danish linear rate ---
+    Danish progressive rate
+Find a way to customize the progressions in ProgressiveRateStrategy
+Add a scaling term to LinearRateStrategy
+Integration test DkkStrategy and PayStationImpl
+Unit test DkkStrategy
+Unit test PayStation with invalid coin using mock CurrencyStrategy
+Integration test PayStationImpl and UsdStrategy
+Replace use of LinearRateStrategy with a mock in the PayStation unit tests
+Refactor PayStationImpl to use CurrencyStrategy
+Unit test UsdStrategy
+Fill in any missing unit/integration tests
+    Write new unit test for rate calculation in PayStationImpl ---
+    Write integration tests for PayStationImpl and ProgressiveRateStrategy ---
+Separate integration and unit tests
+Implement and test ProgressiveRateStrategy
+    test one hour
+    test two hours
+    test three hours
+    test four hours
+Refactor PayStationImpl to use a RateStrategy
+Implement and test LinearRateStrategy
+Implement empty()
+Pressing "Buy" returns a domain.Receipt with the amount of minutes paid for
+Invalid coin returns IllegalArgumentException
+Cancelling resets the domain.PayStation
+5 cents = 2 minutes
+10 cents = 4 minutes
+25 cents = 10 minutes
